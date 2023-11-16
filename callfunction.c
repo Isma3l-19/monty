@@ -29,7 +29,7 @@ void call_fun(op_func func, char *op, char *val, int ln, int format)
 		{
 			if (isdigit(val[i]) == 0)
 			{
-				err(5, ln);
+				error(5, ln);
 			}
 		}
 		node = create_node(atoi(val) * flag);
