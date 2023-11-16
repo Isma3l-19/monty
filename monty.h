@@ -61,9 +61,9 @@ void swap_nodes(stack_t **, unsigned int);
 void print_char(stack_t **, unsigned int);
 void print_str(stack_t **, unsigned int);
 void rotl(stack_t **, unsigned int);
-void err(int error_code, ...);
-void more_err(int error_code, ...);
-void string_err(int error_code, ...);
+void error(int error_code, ...);
+void more_error(int error_code, ...);
+void string_error(int error_code, ...);
 void rotr(stack_t **, unsigned int);
 void add_nodes(stack_t **, unsigned int);
 void sub_nodes(stack_t **, unsigned int);
@@ -72,7 +72,5 @@ void mul_nodes(stack_t **, unsigned int);
 void mod_nodes(stack_t **, unsigned int);
 void f_div(stack_t **head, unsigned int counter);
 void f_pall(stack_t **head, unsigned int counter);
-
-gcc *.c -fPIC && gcc *o -shared -o liball.sd
 
 #endif
